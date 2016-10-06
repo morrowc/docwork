@@ -1,0 +1,18 @@
+_4 Why IoT Security and Privacy is of Particular Interest_
+
+Although consumers face general security and privacy threats as a result of any Internet-connected device, the nature of consumer IoT presents the following unique aspects:
+
+_4.1 Non-technical or uninterested consumers._
+
+The consumers to whom IoT devices are marketed often do not have the technical expertise to evaluate security risks or to seek out and apply security patches; generally, they may lack interest in doing so. In addition, security is not a task that most users want to spend time on.1 The notion of requiring the typical user to apply such software patches to non-conventional Internet-connected devices at all (e.g., to a digital picture frame) may be both foreign and cumbersome.
+
+_4.2 Challenging device discovery and inventory._
+
+Consumers already have difficulty identifying and troubleshooting the devices that are currently connected to their home networks.2 IoT devices will exacerbate this situation, as consumers connect an increasingly wide variety of devices to their home networks. Users will likely lose track of what devices are connected to the Internet over time,
+
+which will make securing them even more challenging. In addition, ISPs will have difficulty helping consumers identify the sources of security problems. Although ISPs may be able to determine that some device on a customer’s home network is compromised, they may be unable to identify the specific compromised device, due to technologies such as network address translation (NAT) and other technologies that may obscure the identity of individual devices.
+
+
+_4.3 Effects on Internet access service._
+
+IoT devices compromised by malware (see Sections 3.4.6 and 4.3) can affect the Internet access service of both the user of such IoT devices and other users whose traffic runs over the same shared Internet links. These devices may also present a threat to the user and other targets of the malware.1 This malware can be used to launch DDoS attacks,2 send spam, attack other devices on the user's network, or otherwise maliciously interfere with the user's Internet access service. These problems increase the costs incurred by the ISP, who has to spend effort mitigating against these attacks, providing help desk support for users who are unable to determine why their Internet Access Service is behaving abnormally or are experiencing degraded performance, and who must at times disable the Internet access service of users whose devices are performing malicious network activity. It will also impose costs on the target of any such attacks and the IoT device makers themselves, who may need to take steps to mitigate these problems.
