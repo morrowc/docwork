@@ -1,47 +1,63 @@
 _4 Why IoT Security and Privacy is of Particular Interest_
 
-Although consumers face general security and privacy threats as a result of
-any Internet-connected device, the nature of consumer IoT presents the
-following unique aspects: 
+The 'Internet of Things' re-introduces the same types of security and privacy
+concerns for end users. The difference, though, is there are often no clear
+controls nor documentation available to inform a user about risks introduced
+with the IoT device(s) deployed. Further, studies have shown[0] that relying
+on the end user for security and privacy decisions is prone to failure.
 
 _4.1 Non-technical or uninterested consumers._
 
-The consumers to whom IoT devices are marketed often do not have the technical
-expertise to evaluate security risks or to seek out and apply security patches;
-generally, they may lack interest in doing so. In addition, security is not a
-task that most users want to spend time on.1 The notion of requiring the
-typical user to apply such software patches to non-conventional
-Internet-connected devices at all (e.g., to a digital picture frame) may be
-both foreign and cumbersome.
+End-users are incapable of evaluating the privacy and security implications
+of any particular IoT device as deployed in their home ecosystem. Additionally,
+more often than not[1] the deployed devices lack practical mechanisms to
+perform secure updates or security policy enforcement.
 
 _4.2 Challenging device discovery and inventory._
 
-Consumers already have difficulty identifying and troubleshooting the devices
-that are currently connected to their home networks.2 IoT devices will
-exacerbate this situation, as consumers connect an increasingly wide variety
-of devices to their home networks. Users will likely lose track of what
-devices are connected to the Internet over time, which will make securing them
-even more challenging. In addition, ISPs will have difficulty helping
-consumers identify the sources of security problems. Although ISPs may be
-able to determine that some device on a customer’s home network is
-compromised, they may be unable to identify the specific compromised device,
-due to technologies such as network address translation (NAT) and other
-technologies that may obscure the identity of individual devices.
+Households are increasingly connecting more devices[2] to the network. As more
+of theese devices are IoT devices, consumers are unable to make better decsions
+about their security and privacy posture. Consumers can not be relied upon to
+manage the devices connected to their network, and in some cases the device(s)
+may not be controlled or owned by the consumer (power/water/gas meters).
 
+Identifying devices which are misbehaving is beyond the ability of consumers and
+likely beyond the ability of the ISP to identify due to NAT and other similar
+technologies emlpoyed in consumer networking.
 
 _4.3 Effects on Internet access service._
 
-IoT devices compromised by malware (see Sections 3.4.6 and 4.3) can affect the
-Internet access service of both the user of such IoT devices and other users
-whose traffic runs over the same shared Internet links. These devices may also
-present a threat to the user and other targets of the malware.1 This malware
-can be used to launch DDoS attacks,2 send spam, attack other devices on the
-user's network, or otherwise maliciously interfere with the user's Internet
-access service. These problems increase the costs incurred by the ISP, who
-has to spend effort mitigating against these attacks, providing help desk
-support for users who are unable to determine why their Internet Access
-Service is behaving abnormally or are experiencing degraded performance, and
-who must at times disable the Internet access service of users whose devices
-are performing malicious network activity. It will also impose costs on the
-target of any such attacks and the IoT device makers themselves, who may need
-to take steps to mitigate these problems.
+Any device which is misbehaving, or compromised on the local consumer network
+makes the whole of the network less secure, and less performant. IoT devices
+deployment into the consumer network does not change this demonstrably, except
+that as discussed in 4.2 and [3], there are more challenges in remediation.
+
+These challenges increase cost to the consumer:
+  o by reducing access bandwidth
+  o increasing access times
+  o loss of credentials/identity to malware infected hosts on the local network
+
+Costs for ISPs are increased as well through:
+  o increased customer support interactions
+  o increased bandwidth usage across the ISP network
+
+Finally, poor security practices across the network impact other Internet users
+through:
+  o increased harmful traffic
+  o spam with more/other malware infection vectors
+  o denial of service attacks
+
+
+0: https://www.hpe.com/h20195/V2/GetPDF.aspx/4AA5-4759ENW.pdf
+   https://www.sans.org/reading-room/whitepapers/analyst/securing-internet-things-survey-34785
+   http://www.zdnet.com/article/internet-of-things-devices-lack-fundamental-security-study-finds/
+
+1: https://www.veracode.com/sites/default/files/Resources/Whitepapers/internet-of-things-whitepaper.pdf
+   http://zesty.ca/pubs/yee-sid-ieeesp2004.pdf
+
+2: http://www.cantechletter.com/2016/08/households-now-use-average-seven-connected-devices-every-day-report/
+   http://www.montrealgazette.com/business/cnw/release.html?rkey=20160824C2374&filter=5611
+   https://www.sandvine.com/trends/the-connected-home.html
+   http://www.cc.gatech.edu/~beki/c27.pdf
+
+3: https://www.usenix.org/system/files/conference/woot15/woot15-paper-pa.pdf
